@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon2.png" type="image/png">
+    <title>Número Secreto</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="container__contenido">
+            <div class="container__informaciones">
+                <div class="container__texto">
+                    <h1></h1>
+                    <p class="texto__parrafo"></p>
+                </div>
+                <input type="number" id="valorUsuario" min="1" max="10" pattern="[1-9]|10" class="container__input">
+                <div class="chute container__botones">
+                    <button onclick="verificarIntento();" class="container__boton" id="finalizar">Intentar</button>
+                    <button onclick="reiniciarJuego();" class="container__boton" id="reiniciar" disabled>Nuevo juego</button>
+                </div>
+            </div>
+            <div class="container__imagen-persona">
+                <img src="adivina7.png" alt="Un personaje de fantasia con bola de cristal"/>
+            </div>
+        </div>
+    </div>
+    <footer class="footer"> Desarrollado por JBMULLER &#174; Todos los derechos reservados - 2024 - </footer>
+    <script src="app.js"></script>
+
+</body>
+
+</html>
